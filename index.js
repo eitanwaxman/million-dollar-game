@@ -11,6 +11,7 @@ const header = document.querySelector("h1");
 const subHeader = document.querySelector("h2");
 const loading = document.getElementsByClassName("loading");
 const image = document.getElementsByClassName("image");
+const form = document.querySelector("a");
 
 function gameOver() {
   let results = result()
@@ -19,6 +20,7 @@ function gameOver() {
   image[0].src = results[1];
   loading[0].style.display = "none";
   button.style.display = "none"
+  form.style.visibility = "visible"
 }
 
 function timer() {
